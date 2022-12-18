@@ -128,7 +128,7 @@ class Notification:
         self.notes = notes
 
 
-class Record:
+class Record(Output):
     def __init__(
         self,
         name: Name,
@@ -189,6 +189,9 @@ class Record:
     def change_email(self, new_email):
         self.email = Email(new_email)
         return "Email successfully changed."
+    
+    def get_info(self):
+        return f"Record info: {self.name.get_info()},{self.phone.get_info()},{self.birthday.get_info()},{self.adress.get_info()},{self.email.get_info()}"
 
 
 class RecordLoadFile:
