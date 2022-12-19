@@ -1,6 +1,6 @@
-from bot_cod.classes import ADDRESS_BOOK, NOTE_BOOK
-from bot_cod.functions import get_help, incorrect_input, recreate_contacts, recreate_notes
-from bot_cod.technical import USER_INPUT, instructions
+from classes import ADDRESS_BOOK, NOTE_BOOK
+from functions import get_help, incorrect_input, recreate_contacts, recreate_notes
+from technical import USER_INPUT, instructions
 
 
 def main():
